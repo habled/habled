@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #monday, #tuesday, #wednesday, #thursday, #friday, #saturday {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .lesson {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Расписание занятий</h1>
+    <table>
+        <tr>
+            <th>День</th>
+            <th>1 урок</th>
+            <th>2 урок</th>
+            <th>3 урок</th>
+            <th>4 урок</th>
+            <th>5 урок</th>
+            <th>6 урок</th>
+        </tr>
+        <tr>
+            <td><a name="monday"></a>Понедельник</td>
+            <td class="lesson" style="background-color: #ff8c00;">Математика</td>
+            <td class="lesson" style="background-color: #FF8C00;">Математика</td>
+            <td class="lesson" style="background-color: #8B0000;">Физика</td>
+            <td class="lesson" style="background-color: #8B0000;">Физика</td>
+            <td class="lesson" style="background-color: #0000FF;">Литература</td>
+            <td class="lesson" style="background-color: #0000FF;">Литература</td>
+        </tr>
+        <tr>
+            <td>Вторник</td>
+            <td class="lesson" style="background-color: #228B22;">Русский язык</td>
+            <td class="lesson" style="background-color: #228B22;">Русский язык</td>
+            <td class="lesson" style="background-color: #ffff99;">Химия</td>
+            <td class="lesson" style="background-color: #ffff99;">Химия</td>
+            <td class="lesson" style="background-color: #008080;">История</td>
+            <td class="lesson" style="background-color: #008080;">История</td>
+        </tr>
+        <!-- продолжение для остальных дней -->
+    </table>
+    <br>
+    <h2>Домашнее задание</h2>
+    <p><a name="homework1"></a><strong>Математика:</strong> Выполнить упражнение 5 на странице 47.</p>
+    <p><a name="homework2"></a><strong>Физика:</strong> Подготовить краткое изложение на тему "Электричество".</p>
+    <p><a name="homework3"></a><strong>Литература:</strong> Прочитать главу 3-4 и написать краткое содержание.</p>
+</body>
+</html>
+
